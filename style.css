@@ -1,0 +1,63 @@
+/* Stylesheet for FrontEnd Portfolio*/
+body {
+  background-color: #3C7A89;
+  color: #F2F2F2;
+  margin-top: 0;
+  text-align: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #16262E;
+  margin-top: 0;
+  text-align: center;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  color: #3C7A89;
+}
+
+.navbar a.active {
+    color: #3C7A89;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  padding: 0px 300px 0px 300px;
+}
+/* style for profile picture */
+.selfie {
+  border-radius: 50%;
+  display: inline;
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+
+}
+/* style for front page picture */
+.frontpage{
+  width: 800px;
+  height: auto;
+
+}
+
+
+
+
+footer{
+  margin-top: auto;
+
+}
