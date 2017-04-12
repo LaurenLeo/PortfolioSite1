@@ -1,0 +1,97 @@
+/* Media Query Stylesheet*/
+
+
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+      div.navbar li {
+        text-align: center;
+        float: none;
+      }
+      div.portfolioimgs {
+        display: block;
+        width: auto;
+        float: none;
+      }
+
+
+}
+
+
+
+
+
+
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+
+
+
+
+
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+    div.navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      background-color: #16262E;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+  }
+    div.navbar li{
+      float: none;
+    }
+
+    div.navbar li a {
+    display: block;
+    color: #F2F2F2;
+    padding: 8px 16px;
+    text-decoration: none;
+
+  }
+
+    div.navbar li a.active {
+    color: #3C7A89;
+
+  }
+
+    div.navbar li a:hover:not(.active) {
+    color: #3C7A89;
+  
+  }
+
+  div.content {
+    margin-left: 15%;
+    padding: 1px 16px;
+    height: auto;
+  }
+}
+/*
+  div.navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+  }
+
+  div.navbar li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+  }
+*/
+
+}

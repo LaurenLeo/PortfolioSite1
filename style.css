@@ -4,20 +4,42 @@ body {
   color: #F2F2F2;
   margin-top: 0;
   text-align: center;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
-.navbar {
+@font-face {
+    font-family: 'existencelight';
+    src: url('Existence-Light-webfont.eot');
+    src: url('Existence-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Existence-Light-webfont.woff') format('woff'),
+         url('Existence-Light-webfont.ttf') format('truetype'),
+         url('Existence-Light-webfont.svg#existencelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+h1{
+  font-family: existencelight, Arial, sans-serif;
+  font-size: 200%;
+}
+
+
+.navbar ul {
+  list-style-type: none;
   overflow: hidden;
   background-color: #16262E;
-  margin-top: 0;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar a {
-  float: left;
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
   display: block;
   color: #F2F2F2;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -35,7 +57,7 @@ h1 {
   text-align: center;
 }
 
-p {
+.about p {
   padding: 0px 300px 0px 300px;
 }
 /* style for profile picture */
@@ -49,15 +71,88 @@ p {
 }
 /* style for front page picture */
 .frontpage{
-  width: 800px;
+  width: 100%;
   height: auto;
 
 }
 
+/*Portfolio Image style*/
+div.portgallery {
+  display: inline-block;
+  margin: auto;
+  width: 80%;
 
 
+}
 
-footer{
-  margin-top: auto;
+div.portfolioimgs {
+  width: 33%;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+}
 
+div.portfolioimgs img {
+  max-width: 95%;
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.7;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+div.portfolioimgs:hover .overlay {
+  height: 30%;
+}
+
+.overtext {
+  white-space: nowrap;
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/*
+div.portfolioimgs.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #white;
+}
+
+div.portfolioimgs:hover .overlay {
+  opacity: 0.3;
+}
+
+div.portfolioimgs.desc {
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+*/
+.footer p {
+  overflow: auto;
 }
